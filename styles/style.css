@@ -1,0 +1,100 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body {
+  height: 800px;
+}
+.topNav, .mainNav {
+  width: 100%;
+  min-height: 60px;
+}
+.mainNav, .topNavLi {
+  height: 100%;
+}
+.topNav {
+  height: auto;
+  background-color: #693D3D;
+  color: white
+}
+.mainNav,
+.drop > ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topNavLi {
+  font-family: Oswald, sans-serif;
+  font-weight: lighter;
+  line-height: 60px;
+  min-width: 90px;
+  min-height: 60px;
+  cursor: pointer;
+  text-align: center;
+}
+.drop, .slideDown {
+  background-color: #DE7A22;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  /* smooth slideUP and slideDOWN */
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+.slideDown {
+  max-height: 150px;
+
+  /*max-height: 100%;*/
+  /*height: auto;*/
+}
+.active {
+  background-color: #BA5536;
+}
+.drop > ul {
+  height: 100%;
+}
+.drop li {
+  min-width: 120px;
+  min-height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #693D3D;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9em;
+}
+.drop li:hover {
+  background-color: #693D3D;
+  color: white;
+}
+
+.drop ul {
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  transform: translateY(-200px);
+
+  /*-webkit-transition: transform 0.5s;*/
+  /*-moz-transition: transform 0.5s;*/
+  /*-ms-transition: transform 0.5s;*/
+  /*-o-transition: transform 0.5s;*/
+  /*transition: transform 0.5s;*/
+}
+ .drop .movePlace {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+
+   -webkit-transition: transform 0.2s;
+   -moz-transition: transform 0.2s;
+   -ms-transition: transform 0.2s;
+   -o-transition: transform 0.2s;
+   transition: transform 0.2s;
+}
